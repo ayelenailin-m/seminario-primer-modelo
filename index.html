@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detector de Toxicidad</title>
+    <!-- libreria para usar tensorflow en el navegador -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <!-- modelo preentrenado de toxicidad -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container"> 
+        <h2>Detector de Toxicidad</h2>
+        <p>Escribe una palabra en inglés:</p>
+        <textarea id="inputText" placeholder="Ej: You are asshole"></textarea><br>
+        <button onclick="analyzeText()">Analizar</button>
+
+        <div class="result" id="resultBox">
+            El resultado va a aparecer acá...
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
