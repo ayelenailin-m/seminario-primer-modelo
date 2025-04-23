@@ -2,6 +2,7 @@ let model;
 const threshold = 0.9; // Nivel de confianza para considerar que es tóxico
 
 
+// threshold es el nivel mínimo de confianza para que algo se considere "tóxico". En este caso, 90%.
 toxicity.load(threshold).then(m => { // Carga el modelo preentrenado
     model = m; // Se guarda el modelo en la variable global model
     console.log("Modelo cargado");
